@@ -40,16 +40,43 @@ public class ShoppingCart {
 		//   \n  %n
 		//String display =String.format("", args)
 		System.out.println("How much milk do you want?");
-		int total = sc.nextInt();
-		System.out.printf("OK you want %d units of milk, you owe %.2f", total, (milk*total));
+		int totalMilk = sc.nextInt();
+		System.out.printf("OK you want %d units of milk, you owe %.2f", totalMilk, (milk*totalMilk));
+		
+		System.out.printf("We have milk for $.2f %n",eggs );
+		System.out.println("How much eggs do you want?");
+		int totalEggs = sc.nextInt();
+		System.out.printf("OK you want %d units of milk, you owe %.2f", totalEggs, (eggs*totalEggs));
+		
+		System.out.println("We have cereal for $.2f %n",cereal);
+		System.out.println("How much cereal do you want?");
+		int totalCereal = sc.nextInt():
+		System.out.printf("OK you want %d units of cereal, you owe %.2f", totalCereal, (cereal*totalCereal)):
+		
 		
 		/*
 		Modify the ShoppingCart class so that it nicely displays all the items
 		and price of the inventory and allow  the users to buy as many items 
 		they want, at the end add up the total that the user must pay, 
-		also if user pays  then you must return the change 
-		 
+		also if user pays  then you must return the change
 		 */
+		System.out.println("In shopping cart:");
+		System.out.println("Total milk " totalMilk +  "$" (totalMilk * milk));
+		System.out.println("Total eggs " totalEggs + "$"(totalEggs * eggs));
+		System.out.println("Total cereal " totalCereal + "$"(totalCereal * cereal));
+		
+		totalEnd = ((totalMilk * milk) + (totalEggs * eggs) + (totalCereal * cereal))
+		
+		System.out.println("Your total comes out to be $ ", totalEnd);
+		double paid = sc.nextInt();
+		System.out.println("How much will you be paying today?");
+		
+		
+		change = (totalEnd - paid);
+		
+		System.out.println("Your change is $", change);
+		System.out.println("Thank you, come again!");
+		
 		
 	}
 }
